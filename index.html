@@ -1,0 +1,45 @@
+<!--
+Project Name: JavaScript-DoYouLoveMe
+Author: Tong Zhang
+Date: 2016-07-07
+Description: This is an simple javascript practice.When user mouse want to click
+			the "no" button will move the place. I have achieve it by onmouseover.
+Reference: http://www.cnblogs.com/lhb25/archive/2010/08/22/1805868.html
+--><!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" content="text/html">
+	<title>Do you love me</title>
+	<script type="text/javascript" src="js/move.js"></script>
+	<style>
+	h1{
+		position:absolute;
+		left:40%;
+		top:100px;
+		width:auto;
+		height:200px;
+	}
+	#yesDiv{
+		position:absolute;
+		left:40%;
+		top:200px;
+		width:200px;
+		height:200px;
+	}
+	#noDiv{
+		position: absolute;
+		left:53%;
+		top:200px;
+		height:200px;
+		width:200px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Do you love me?</h1>
+	<div id="yesDiv">
+		<input type="button" value="Yes" onclick="yes()" />
+	</div>
+	<div id="noDiv">
+		<input type="button" value="No" onmouseover="no()" />
+	</div>
+</body>
